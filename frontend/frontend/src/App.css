@@ -1,0 +1,130 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.spam-detector {
+  width: 100%;
+  max-width: 650px;
+  padding: 40px;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.header h1 {
+  margin: 0 0 12px;
+  font-size: 34px;
+  color: #1f2937;
+}
+
+.header p {
+  margin: 0;
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+.input-section {
+  margin-bottom: 20px;
+}
+
+.input-section label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #374151;
+}
+
+textarea {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #d1d5db;
+  border-radius: 12px;
+  resize: vertical;
+  font-size: 16px;
+  font-family: inherit;
+  outline: none;
+}
+
+textarea:focus {
+  border-color: #4f46e5;
+}
+
+.button-group {
+  display: flex;
+  gap: 12px;
+}
+
+button {
+  border: none;
+  border-radius: 10px;
+  padding: 13px 20px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.check-button {
+  flex: 1;
+  background: #4f46e5;
+  color: white;
+}
+
+.clear-button {
+  background: #e5e7eb;
+  color: #374151;
+}
+
+.result {
+  margin-top: 25px;
+  padding: 25px;
+  border-radius: 14px;
+  text-align: center;
+}
+
+.result-label {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.result h2 {
+  margin: 8px 0;
+  font-size: 28px;
+}
+
+.result p {
+  margin: 0;
+}
+
+.result.spam {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.result.not-spam {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.error {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 10px;
+  background: #fee2e2;
+  color: #991b1b;
+  text-align: center;
+}
